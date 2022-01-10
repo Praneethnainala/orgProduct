@@ -12,8 +12,6 @@ import java.util.Map;
 
 import org.productDomain.ProductDetails;
 
-import com.mysql.cj.jdbc.PreparedStatementWrapper;
-
 public class ProductUtils {
 	Connection connection;
 	PreparedStatement stmt;
