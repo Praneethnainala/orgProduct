@@ -55,7 +55,7 @@ public class ProductUtils {
 
 	}
 
-	public List<ProductDetails> getAllDetails(ProductDetails details) {
+	public List<ProductDetails> getAllDetails() {
 		List<ProductDetails> productList = new ArrayList<ProductDetails>();
 
 		try {

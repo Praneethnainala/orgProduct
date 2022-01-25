@@ -15,7 +15,7 @@ import org.productService.ProductServicesImpl;
 public class ProductClient {
 
 	public static void main(String[] args) throws SQLException {
-		ProductDetails Order1 = new ProductDetails(1, "Nike tshrit", "nike", "clothes", 2021, 2999.9, 1);
+		ProductDetails Order1 = new ProductDetails(90, "Nike tshrit", "nike", "clothes", 2021, 2999.9, 90);
 
 		ProductDetails Order2 = new ProductDetails(2, "canvas", "redtape", "shoes", 2021, 599.9, 2);
 		ProductDetails Order3 = new ProductDetails(3, "11 pro", "iphone", "moblie", 2021, 49999.9, 3);
@@ -42,7 +42,7 @@ public class ProductClient {
 
 		ProductJDBCImpl obj = new ProductJDBCImpl();
 
-//		obj.addproduct(Order1);
+		//obj.addproduct(Order1);
 //		obj.addproduct(Order2);
 //		obj.addproduct(Order3);
 //		obj.addproduct(Order4);
@@ -56,7 +56,7 @@ public class ProductClient {
 //		System.out.println(obj.getTopNproduct(3));
 //		System.out.println(obj.updatePrice(2, 100.0));
 //		System.out.println(obj.sortByPrice());
-//		System.out.println(obj.deleteProduct(7));
+		System.out.println(obj.deleteProduct(90));
 
 		Order obj1 = new Order();
 		OrderService obj2 = new OrderServiceImpl();
@@ -94,7 +94,7 @@ public class ProductClient {
 //		customerDetails.deleteOrder(7);
 //		System.out.println(customerDetails.getAllOrder());
 //		System.out.println(customerDetails.getOrderId(2));
-		System.out.println(customerDetails.getProductOrder());
+		//System.out.println(customerDetails.getProductOrder());
 //		System.out.println(customerDetails.);
 //		System.out.println(obj2.updatemoblie(7, 1000000L));
 	}
