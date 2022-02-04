@@ -18,5 +18,7 @@ public interface OrderService {
 	
 	public Order updatemoblie(int orderId,long moblie);
 	
+	public void test();
+	
 	 
 }
